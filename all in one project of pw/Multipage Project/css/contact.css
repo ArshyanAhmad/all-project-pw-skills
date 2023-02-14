@@ -1,0 +1,71 @@
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.contact-form{
+    padding: 4rem 6rem;
+    background-color:rgb(229 229 229);
+    width: 40rem;
+    height: 55rem;
+    box-shadow: 0 0 10px #494646;
+    border-radius: 2rem;
+}
+
+.contact-heading{
+    font-size: 4.5rem;
+    text-align: center;
+
+}
+
+.paragraph{
+    padding: 1rem 0;
+}
+
+.paragraph label{
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+}
+
+.paragraph input, #Message{
+    padding: 0.3rem 2rem;
+    width: 90%;
+    height: 4rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    color: black;
+    font-family: "Poppins" , sans-serif;
+    font-weight: 500;
+}
+
+#Message{
+    width: 90%;
+    height: 10rem;
+    padding: 2rem 2rem;
+}
+
+.contact-btn{
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 2px solid #038d03db;
+    background-color: #038d03db;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+    html{
+        font-size: 35% !important;
+    }
+    
+}

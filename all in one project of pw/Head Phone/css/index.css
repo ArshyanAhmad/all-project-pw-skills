@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0f10;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/* ###############################
+        Header Section Start
+################################## */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 3rem 2rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.nav-list li a {
+    color: white;
+    font-size: 1.8rem;
+    transition: all .3s ease;
+}
+
+.nav-list li a:hover {
+    color: #ebe5e55d;
+}
+
+.small-logo {
+    width: 100%;
+}
+
+
+.big-logo {
+    width: 20.5rem;
+    position: absolute;
+    top: -10.3rem;
+    z-index: -23;
+}
+
+.btn {
+    padding: 1.1rem 2.5rem;
+    font-size: 1.8rem;
+    border-radius: 0.4rem;
+    background: #222;
+    color: white;
+    box-shadow: 0 0 0 2px #cccccc1a;
+    transition: all .4s ease;
+}
+
+.btn:hover {
+    background-color: #222222a1;
+    box-shadow: 0 0 0 2px #222222a1;
+    cursor: pointer;
+}
+
+.text-content::before {
+    content: "On ear";
+    width: 50rem;
+    position: absolute;
+    top: 0;
+    font-size: 10rem;
+    right: 3.6rem;
+    color: rgb(254 254 254 / 20%);
+    font-weight: bold;
+}
+
+.text-content {
+    position: relative;
+    width: 80rem;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    color: white;
+    padding-left: 20.5rem;
+}
+
+.big-text {
+    font-size: 1.4rem;
+    color: #3b4944;
+    line-height: 2.3rem;
+
+}
+
+.text-content h2 {
+    font-size: 4.5rem;
+
+}
+
+.text-content .small {
+    padding: 3rem 0;
+    font-size: 20px;
+}
+
+.box-content {
+    display: flex;
+    gap: 2rem;
+    background: #222;
+    align-items: center;
+    justify-content: center;
+    height: 4.5rem;
+    border-radius: 9px;
+    width: 21rem;
+    margin-top: 3rem;
+}
+
+.box-content img {
+    width: 1.5rem;
+}
+
+.box-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.box-content h5 {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+
+.company-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+
+.company-logos {
+    display: flex;
+    align-items: center;
+    gap: 10.45rem;
+}
+
+.company-logo img {
+    width: 8.8rem;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.company-logo img:hover {
+    transform: translateY(-5px);
+}
+
+/* ###############################
+        Header Section End
+################################## */
+
+
+/* ###############################
+    Hero [Specs] Section Start
+################################## */
+
+.specs::before {
+    content: "Specs";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+    font-size: 7rem;
+    color: rgb(254 254 254 / 20%);
+    font-weight: 400;
+    text-align: center;
+}
+
+.specs {
+    padding: 9rem 0;
+    position: relative;
+}
+
+.specs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-specs img {
+    width: 1.4rem;
+}
+
+.text-specs {
+    padding: 2rem 0;
+    color: white;
+}
+
+.text-specs h5 {
+    padding: 0.9rem 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.text-specs p {
+    font-size: 1.3rem;
+    color: #4e5c57;
+    font-weight: 300;
+}
+
+.specs-image img {
+    width: 40rem
+}
+
+.img1 {
+    padding: 0 3rem;
+}
+
+.img4 {
+    padding: 0 3rem;
+}
+
+
+/* ###############################
+    Hero [Specs] Section End
+################################## */
+
+
+/* ###############################
+    Hero [Case] Section Start
+################################## */
+
+.case::before {
+    content: "Case";
+    width: 100%;
+    position: absolute;
+    top: 2rem;
+    font-size: 7rem;
+    text-align: center;
+    display: block;
+    color: rgb(254 254 254 / 20%);
+    font-weight: 400;
+}
+
+.case {
+    position: relative;
+    padding: 10.1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.case-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.case-image img {
+    width: 20.5rem;
+}
+
+.case-content p {
+    padding: 3rem 0;
+    color: #4e5c57;
+}
+
+.case-content {
+    width: 50%;
+}
+
+.case-btn {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.case-btn img {
+    width: 1.6rem;
+}
+
+
+/* ###############################
+    Hero [Case] Section End
+################################## */
+
+
+/* ###############################
+    Hero [Services] Section Start
+################################## */
+
+.services {
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0;
+    background-color: #181a1b;
+}
+
+.service-container {
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+}
+
+.service-content h5 {
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 500;
+}
+
+.service-content p {
+    font-size: 1.5rem;
+    color: #a19393;
+    font-weight: 500;
+    padding: 2rem 0;
+}
+
+.service-btn {
+    padding: 1.1rem 1.7rem;
+    color: white;
+    background-color: #000;
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    justify-content: center;
+    margin-left: 0.3rem;
+    transition: all .4s ease;
+}
+
+.service-btn:hover {
+    background-color: #25252567;
+    cursor: pointer;
+}
+
+.service-image img {
+    width: 100%;
+}
+
+
+/* ###############################
+    Hero [Services] Section End
+################################## */
+
+.product::before {
+    content: "Choose Your Style";
+    width: 38.3rem;
+    position: absolute;
+    top: 4.8rem;
+    font-size: 7rem;
+    right: 37rem;
+    color: rgb(254 254 254 / 20%);
+    font-weight: 400;
+    padding: 5rem 0 8rem 0;
+    text-align: center;
+}
+
+.product {
+    padding: 35rem 12.3rem 9rem 12.3rem;
+    position: relative;
+}
+
+.product-image {
+    background-color: #181a1b;
+    display: inline-block;
+    padding: 1rem;
+    width: 18.8rem;
+    text-align: center;
+    position: relative;
+}
+
+.product-container {
+    display: flex;
+    gap: 3.1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 46rem;
+}
+
+.product-img {
+    width: 10rem;
+    position: absolute;
+    bottom: 7rem;
+    left: 4.6rem;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.img-content {
+    display: flex;
+    align-items: self-end;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0.9rem 0;
+    height: 12.7rem;
+}
+
+.product-img:hover {
+    transform: translateY(-0.5rem);
+}
+
+.img-content p {
+    color: #ccc;
+    font-size: 1.3rem;
+}
+.img-content img {
+    bottom: 10px;
+    position: relative;
+    right: 0px;
+
+}
+
+
+/* ###############################
+    Footer Section Start
+################################## */
+
+.footer {
+    padding: 5rem 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer-list {
+    line-height: 2.8rem;
+}
+
+.footer-list ul {
+    padding-bottom: 0.7rem;
+    font-size: 1.7rem;
+
+}
+
+.footer-list li {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #535f5b;
+}
+
+.footer-list li:hover {
+    color: #718880;
+}
+
+.footer-img img {
+    width: 3rem;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    padding: 0.2rem 1.5rem;
+    width: 34rem;
+    height: 5rem;
+    border-radius: 0.4rem;
+    background: #181a1b;
+    color: white;
+    margin-bottom: 3.5rem;
+}
+
+.form {
+    position: relative;
+}
+
+.form-btn {
+    position: absolute;
+    right: 0.8rem;
+    top: 0.5rem;
+    font-size: 1.2rem;
+    padding: 1.1rem 1.4rem;
+    display: flex;
+    background: #222;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.form-btn img {
+    width: 1.4rem;
+}
+
+.footer-img-link img {
+    margin-right: 2rem;
+    transition: all .3s linear;
+}
+
+.footer-img-link img:hover {
+    transform: translateY(-0.5rem);
+    cursor: pointer;
+}
+
+.upArrow img {
+    transition: all .2s linear;
+}
+
+.upArrow img:hover {
+    transform: translateY(-0.4rem);
+    cursor: pointer;
+}
+
+/* ###############################
+    Footer Section End
+################################## */
+
+
+
+/* ###############################
+    Media Querry Start
+################################## */
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .services {
+        width: 95rem;
+        padding: 4rem;
+    }
+
+    .product {
+        padding: 35rem 4.3rem 9rem 12.3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 44%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 20%;
+    }
+}
+
+/* ###############################
+    Media Querry End
+################################## */

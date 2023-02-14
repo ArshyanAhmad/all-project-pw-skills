@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+body{
+    background-color: #bebcba9c;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.6) url("/Photos/mainBackground.png");
+    background-blend-mode: darken;
+    width: 100%;
+    height: 99rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root{
+    --main-color: #6663e9;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+/* ###########################
+    Header Section Start
+############################## */
+
+.logo img{
+    width: 80%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    padding: 2rem 6rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav-list li a{
+    font-size: 2rem;
+    color: white;
+    transition: all .3s linear;
+}
+
+.nav-list li a:hover{
+    color: var(--main-color);
+}
+
+.btn{
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 6rem;
+    letter-spacing: 0.3rem;
+    border: 3px solid  var(--main-color);
+    margin: 3rem 0.5rem;
+    transition: all .4s ease;
+}
+
+
+.btn:hover{
+    border: 3px solid  var(--main-color);
+    cursor: pointer;
+    background-color: rgba(240, 248, 255, 0.082);
+}
+
+.header-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+}
+
+.header-text h1{
+    color: white;
+    font-size: 6.5rem;
+    font-weight: 600;
+}
+
+.header-text p{
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+    padding: 0 20rem;
+    text-align: center;
+}
+
+.hero{
+    border-top: 55rem;
+    position: relative;
+    background: rgba(207, 14, 14, 0.795);
+}
+
+.company-logo{
+    position: absolute;
+    top: -6rem;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 25rem;
+    border-radius: 4rem;
+    border: 2px solid  #ccc;
+}
+
+.company-image{
+    width: 100%;
+}
+
+.company-image img{
+    width: 40%;
+    filter: invert(100%);
+    transition: all .3s linear;
+}
+
+.company-image img:hover{
+    transform: translateY(-0.9rem);
+}
+
+/* ###########################
+    Header Section End
+############################## */
+
+
+/* ###########################
+    Main Hero Section Start
+############################## */
+
+.main-image-section{
+    padding-top: 30rem;
+}
+
+.main-image-section h1{
+    font-size: 7rem;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.house-img{
+    width: 44rem;
+    background-color: red;
+    height: 30rem;
+}
+
+.house-img img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.box-image{
+    position: relative;
+}
+
+.box-image::after{
+    content: "";
+    height: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background: #2626b491;
+    opacity: 0;
+    display: block;
+    transition: all .4s ease-in-out;
+}
+
+.box-image:hover::after{
+    opacity: 1;
+    height: 100%;
+}
+.box-image:hover .img-content{
+    opacity: 1;
+    height: 100%;
+}
+
+.img-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10%;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    z-index: 999;
+}
+
+.img-content p{
+    color: white;
+    padding: 2rem 0;
+    font-size: 3.5rem;
+}
+
+.img-content h1{
+    color: white;
+    font-size: 5rem;
+    padding: 0;
+}
+
+.book-btn{
+    padding: 1.2rem 2rem;
+    font-size: 1.3rem;
+    margin: 0rem 0;
+    font-weight: 600;
+}
+
+/* ###########################
+    Main Hero Section End
+############################## */
+
+
+
+/* ###########################
+    Review Section Start
+############################## */
+
+.review-container{
+    display: flex;
+    align-items: center;
+    padding: 9rem 7rem;
+    justify-content: space-evenly;
+}
+
+.review-img{
+    width: 100%;
+    padding: 4rem;
+}
+
+.review-img img{
+    width: 54rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3rem;
+    box-shadow: -56px 47px 1px var(--main-color);
+}
+
+.review-text p{
+    padding: 2rem 0;
+    text-align-last: right;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+}
+.review-text h2{
+    font-size: 5rem;
+    padding: 2rem 0;
+}
+
+.review-btn{
+    padding: 2rem 2.5rem;
+    font-size: 1.5rem;
+    border: 2px solid #3531ecef;
+
+}
+.review-btn:hover{
+    border: 2px solid #3531ecef;
+    background-color: #3531ecef;
+    color: white;
+}
+
+.row-rev{
+    flex-direction: row-reverse;
+    padding-left: 12rem;
+    margin-bottom: 10rem;
+}
+
+.review-img2 img{
+    width: 54rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3rem;
+    box-shadow: 68px 55px 1px var(--main-color);
+}
+
+/* ###########################
+    Review Section End
+############################## */
+
+
+
+/* ###########################
+    Form Page Section End
+############################## */
+
+.form-page{
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30rem;
+    width: 100%;
+    padding: 9rem 5rem;
+    text-align: center;
+    border-radius: 5rem;
+}
+
+.form-page-container h2{
+    font-size: 6rem;
+    padding: 0 20rem;
+    color: white;
+}
+
+.form-page-container p{
+    font-size: 2rem;
+    color: white;
+    padding: 4rem 25rem;
+}
+
+.submit-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-input img{
+    width: 3rem;
+    position: absolute;
+    bottom: 2.7rem;
+    left: 4rem;
+}
+
+.submit-input p{
+    display: flex;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.submit-input input{
+    padding: 0rem 6rem;
+    width: 30rem;
+    height: 6rem;
+    background-color: #4c49e9;
+    border: 1px solid #4c49e9;
+    color: white;
+    font-size: 1.7rem;
+    border-radius: 5rem;
+}
+
+.review-btn{
+    background-color: #2523ce;
+    border: 2px solid #4c49e9;
+}
+/* ###########################
+    Form Page Section End
+############################## */
+
+
+/* ###########################
+    Footer Section Start
+############################## */
+
+.footer{
+    padding: 5rem 5rem 2rem 5rem;
+    margin-top: 7rem;
+    background-color: #fdf9f4;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo img{
+    padding-bottom: 4rem;
+    width: 14rem;
+}
+
+.logo-link{
+    display: flex;
+    gap: 3rem;
+}
+
+.logo-link img:hover{
+    transform: translateY(-0.6rem);
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.right-footer{
+    display: flex;
+    gap: 10rem;
+}
+
+.box ul{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--main-color);
+    padding-bottom: 2rem;
+}
+
+.box li{
+    font-size: 2rem;
+    line-height: 4rem;
+    color: black;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.box li:hover{
+    color: #6663e9;
+}
+
+.footer-p{
+    padding-top: 4rem;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+/* ###########################
+    Footer Section End
+############################## */
+
+
+/* ###########################
+    Media Query Start
+############################## */
+
+@media screen and (max-width: 1300px) {
+    html{
+        font-size: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 30%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    html{
+        font-size: 20%;
+    }
+}
+
+/* ###########################
+    Media Query End
+############################## */
